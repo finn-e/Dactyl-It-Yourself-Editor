@@ -1,9 +1,9 @@
 include <SRC/DIYBuilder.scad>
 //Uncomment Layout you want or build your own layout
 
-//include <SRC/Layouts/Pseudoku/HypoWarp_Choc.scad>        // (6x3+2)+[trichord+1] Hypothetical Rhetoric.
-//include <SRC/Layouts/Darrenph1/D-Warp.scad>                // (6x4)+[trichord+1]   Tangental Home Row Cherry Cap Height.
-include <SRC/Layouts/Pseudoku/MiniWarp.scad>             // (5x3)+[trichord]     Utility Event Horrizon    Status:Complete no build test
+//include <SRC/Layouts/finn/HypoWarp_Choc.scad>        // (6x3+2)+[trichord+1] Hypothetical Rhetoric.
+//include <SRC/Layouts/Darrenph1/D-Warp.scad>                // (6x4)+[trichord+1]  Tangental Home Row Cherry Cap Height.
+include <SRC/Layouts/finn/cat4.scad>             // (4x3)+[quadchord]     Status:Complete, built, like cat3 better. 1u's don't add sufficient functionality to be worth memorization, I think. plus it opens up a key for cat cable (4x4 matrix)
 
 //still need to update flies
 //include <SRC/Layouts/Pseudoku/GiGi_Choc.scad>            // 6x2+[021]        Steno Dreamer Original Version with thumb cluster
@@ -35,9 +35,7 @@ mirror([0,0,0]){ //[100] for Left side
 //#BuildBottomPlate(struct = Eborder, hullList = Hstruct, Mount = true, JackType =true, MCUType = true);  
 
 /*3. caps for visualization */
-  rotate(tenting)translate([0,0,plateHeight]){ 
-//    BuildSet(capType = DSA, colors = "ivory", stemcolor = "lightGreen", switchH = 0);
-  } 
+  rotate(tenting)translate([0,0,plateHeight]){    BuildSet(capType = DSA, colors = "ivory", stemcolor = "lightGreen", switchH = 0);  } 
 
 } 
  
